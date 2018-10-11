@@ -1,0 +1,254 @@
+\hypertarget{classcontainers_1_1MissionChickenSoup}{}\section{containers\+:\+:Mission\+Chicken\+Soup Class Reference}
+\label{classcontainers_1_1MissionChickenSoup}\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+
+
+Houses variables modified and read by threads.  
+
+
+
+
+{\ttfamily \#include $<$Mission\+Chicken\+Soup.\+h$>$}
+
+
+
+Collaboration diagram for containers\+:\+:Mission\+Chicken\+Soup\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{dc/dc9/classcontainers_1_1MissionChickenSoup__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcontainers_1_1MissionChickenSoup_ac7407f867e06338f01d09dce2583887a}{Mission\+Chicken\+Soup} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classcontainers_1_1MissionChickenSoup_a5f7a361d8f6375ff5568bc021ca3992e}{Mission\+Chicken\+Soup} (madara\+::knowledge\+::\+Knowledge\+Base \&knowledge)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classcontainers_1_1MissionChickenSoup_a4d5f5baaf50ae3b6b385c8bb46db1a76}{init} (madara\+::knowledge\+::\+Knowledge\+Base \&knowledge)
+\begin{DoxyCompactList}\small\item\em Initializes all containers and variable values. \end{DoxyCompactList}\item 
+void \hyperlink{classcontainers_1_1MissionChickenSoup_aa735275f3e25d9576b3a6353a645f738}{modify} (void)
+\begin{DoxyCompactList}\small\item\em Modifies all containers to indicate they should be resent on next send. \end{DoxyCompactList}\item 
+void \hyperlink{classcontainers_1_1MissionChickenSoup_ac319178fa55235e383728e33ea44915d}{read} (void)
+\begin{DoxyCompactList}\small\item\em Reads all M\+A\+D\+A\+RA containers into the user-\/facing C++ variables. \end{DoxyCompactList}\item 
+void \hyperlink{classcontainers_1_1MissionChickenSoup_a23ec50e0d72093b3f9f6cb4ba58341c3}{write} (void)
+\begin{DoxyCompactList}\small\item\em Writes user-\/facing C++ variables to the M\+A\+D\+A\+RA containers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classcontainers_1_1MissionChickenSoup_a52f8070421852b085217ac745924d3e1}{imu\+\_\+sigma\+\_\+accel}
+\begin{DoxyCompactList}\small\item\em imu acceleration x, y, z \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classcontainers_1_1MissionChickenSoup_a7bd730ab45b8c76c0f8378cffeb98205}{orientation}
+\begin{DoxyCompactList}\small\item\em orientation x, y, z (roll, pitch, yaw) \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classcontainers_1_1MissionChickenSoup_ac0c96514382b72a88f7e6f2e5e170082}{position}
+\begin{DoxyCompactList}\small\item\em the position of the agent (x, y, z) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+madara\+::knowledge\+::\+Thread\+Safe\+Context $\ast$ \hyperlink{classcontainers_1_1MissionChickenSoup_a645607952609f9c2faa48f89809782f1}{context\+\_\+}
+\begin{DoxyCompactList}\small\item\em unmanaged context for locking. The knowledge base should stay in scope \end{DoxyCompactList}\item 
+madara\+::knowledge\+::containers\+::\+Native\+Double\+Array \hyperlink{classcontainers_1_1MissionChickenSoup_a2b9f1fc60c385728175ffb9c7bff5eab}{imu\+\_\+sigma\+\_\+accel\+\_\+}
+\begin{DoxyCompactList}\small\item\em imu\+\_\+sigma\+\_\+accel that directly interfaces to the Knowledge\+Base \end{DoxyCompactList}\item 
+madara\+::knowledge\+::containers\+::\+Native\+Double\+Array \hyperlink{classcontainers_1_1MissionChickenSoup_a6ea3226a3a25d33dd84c1af6a6b5858c}{orientation\+\_\+}
+\begin{DoxyCompactList}\small\item\em orientation that directly interfaces to the Knowledge\+Base \end{DoxyCompactList}\item 
+madara\+::knowledge\+::containers\+::\+Native\+Double\+Array \hyperlink{classcontainers_1_1MissionChickenSoup_afa8ca26939245451a0b5e5c42b05c219}{position\+\_\+}
+\begin{DoxyCompactList}\small\item\em imu\+\_\+sigma\+\_\+accel that directly interfaces to the Knowledge\+Base \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Houses variables modified and read by threads. 
+
+Definition at line 20 of file Mission\+Chicken\+Soup.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!Mission\+Chicken\+Soup@{Mission\+Chicken\+Soup}}
+\index{Mission\+Chicken\+Soup@{Mission\+Chicken\+Soup}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{Mission\+Chicken\+Soup()}{MissionChickenSoup()}}]{\setlength{\rightskip}{0pt plus 5cm}containers\+::\+Mission\+Chicken\+Soup\+::\+Mission\+Chicken\+Soup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontainers_1_1MissionChickenSoup_ac7407f867e06338f01d09dce2583887a}{}\label{classcontainers_1_1MissionChickenSoup_ac7407f867e06338f01d09dce2583887a}
+
+
+Default constructor. 
+
+
+
+Definition at line 7 of file Mission\+Chicken\+Soup.\+cpp.
+
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!Mission\+Chicken\+Soup@{Mission\+Chicken\+Soup}}
+\index{Mission\+Chicken\+Soup@{Mission\+Chicken\+Soup}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{Mission\+Chicken\+Soup(madara\+::knowledge\+::\+Knowledge\+Base \&knowledge)}{MissionChickenSoup(madara::knowledge::KnowledgeBase &knowledge)}}]{\setlength{\rightskip}{0pt plus 5cm}containers\+::\+Mission\+Chicken\+Soup\+::\+Mission\+Chicken\+Soup (
+\begin{DoxyParamCaption}
+\item[{madara\+::knowledge\+::\+Knowledge\+Base \&}]{knowledge}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontainers_1_1MissionChickenSoup_a5f7a361d8f6375ff5568bc021ca3992e}{}\label{classcontainers_1_1MissionChickenSoup_a5f7a361d8f6375ff5568bc021ca3992e}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em knowledge} & the context containing variables and values \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file Mission\+Chicken\+Soup.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!init@{init}}
+\index{init@{init}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{init(madara\+::knowledge\+::\+Knowledge\+Base \&knowledge)}{init(madara::knowledge::KnowledgeBase &knowledge)}}]{\setlength{\rightskip}{0pt plus 5cm}void containers\+::\+Mission\+Chicken\+Soup\+::init (
+\begin{DoxyParamCaption}
+\item[{madara\+::knowledge\+::\+Knowledge\+Base \&}]{knowledge}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontainers_1_1MissionChickenSoup_a4d5f5baaf50ae3b6b385c8bb46db1a76}{}\label{classcontainers_1_1MissionChickenSoup_a4d5f5baaf50ae3b6b385c8bb46db1a76}
+
+
+Initializes all containers and variable values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em knowledge} & the context containing variables and values \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file Mission\+Chicken\+Soup.\+cpp.
+
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!modify@{modify}}
+\index{modify@{modify}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{modify(void)}{modify(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void containers\+::\+Mission\+Chicken\+Soup\+::modify (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontainers_1_1MissionChickenSoup_aa735275f3e25d9576b3a6353a645f738}{}\label{classcontainers_1_1MissionChickenSoup_aa735275f3e25d9576b3a6353a645f738}
+
+
+Modifies all containers to indicate they should be resent on next send. 
+
+
+
+Definition at line 62 of file Mission\+Chicken\+Soup.\+cpp.
+
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!read@{read}}
+\index{read@{read}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{read(void)}{read(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void containers\+::\+Mission\+Chicken\+Soup\+::read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontainers_1_1MissionChickenSoup_ac319178fa55235e383728e33ea44915d}{}\label{classcontainers_1_1MissionChickenSoup_ac319178fa55235e383728e33ea44915d}
+
+
+Reads all M\+A\+D\+A\+RA containers into the user-\/facing C++ variables. 
+
+
+
+Definition at line 32 of file Mission\+Chicken\+Soup.\+cpp.
+
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!write@{write}}
+\index{write@{write}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{write(void)}{write(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void containers\+::\+Mission\+Chicken\+Soup\+::write (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcontainers_1_1MissionChickenSoup_a23ec50e0d72093b3f9f6cb4ba58341c3}{}\label{classcontainers_1_1MissionChickenSoup_a23ec50e0d72093b3f9f6cb4ba58341c3}
+
+
+Writes user-\/facing C++ variables to the M\+A\+D\+A\+RA containers. 
+
+Note that this does not check if values are different. It always overwrites the values in the knowledge base with what is currently in local vars 
+
+Definition at line 47 of file Mission\+Chicken\+Soup.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!context\+\_\+@{context\+\_\+}}
+\index{context\+\_\+@{context\+\_\+}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{context\+\_\+}{context_}}]{\setlength{\rightskip}{0pt plus 5cm}madara\+::knowledge\+::\+Thread\+Safe\+Context$\ast$ containers\+::\+Mission\+Chicken\+Soup\+::context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontainers_1_1MissionChickenSoup_a645607952609f9c2faa48f89809782f1}{}\label{classcontainers_1_1MissionChickenSoup_a645607952609f9c2faa48f89809782f1}
+
+
+unmanaged context for locking. The knowledge base should stay in scope 
+
+
+
+Definition at line 80 of file Mission\+Chicken\+Soup.\+h.
+
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!imu\+\_\+sigma\+\_\+accel@{imu\+\_\+sigma\+\_\+accel}}
+\index{imu\+\_\+sigma\+\_\+accel@{imu\+\_\+sigma\+\_\+accel}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{imu\+\_\+sigma\+\_\+accel}{imu_sigma_accel}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ containers\+::\+Mission\+Chicken\+Soup\+::imu\+\_\+sigma\+\_\+accel}\hypertarget{classcontainers_1_1MissionChickenSoup_a52f8070421852b085217ac745924d3e1}{}\label{classcontainers_1_1MissionChickenSoup_a52f8070421852b085217ac745924d3e1}
+
+
+imu acceleration x, y, z 
+
+
+
+Definition at line 59 of file Mission\+Chicken\+Soup.\+h.
+
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!imu\+\_\+sigma\+\_\+accel\+\_\+@{imu\+\_\+sigma\+\_\+accel\+\_\+}}
+\index{imu\+\_\+sigma\+\_\+accel\+\_\+@{imu\+\_\+sigma\+\_\+accel\+\_\+}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{imu\+\_\+sigma\+\_\+accel\+\_\+}{imu_sigma_accel_}}]{\setlength{\rightskip}{0pt plus 5cm}madara\+::knowledge\+::containers\+::\+Native\+Double\+Array containers\+::\+Mission\+Chicken\+Soup\+::imu\+\_\+sigma\+\_\+accel\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontainers_1_1MissionChickenSoup_a2b9f1fc60c385728175ffb9c7bff5eab}{}\label{classcontainers_1_1MissionChickenSoup_a2b9f1fc60c385728175ffb9c7bff5eab}
+
+
+imu\+\_\+sigma\+\_\+accel that directly interfaces to the Knowledge\+Base 
+
+
+
+Definition at line 70 of file Mission\+Chicken\+Soup.\+h.
+
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!orientation@{orientation}}
+\index{orientation@{orientation}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{orientation}{orientation}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ containers\+::\+Mission\+Chicken\+Soup\+::orientation}\hypertarget{classcontainers_1_1MissionChickenSoup_a7bd730ab45b8c76c0f8378cffeb98205}{}\label{classcontainers_1_1MissionChickenSoup_a7bd730ab45b8c76c0f8378cffeb98205}
+
+
+orientation x, y, z (roll, pitch, yaw) 
+
+
+
+Definition at line 62 of file Mission\+Chicken\+Soup.\+h.
+
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!orientation\+\_\+@{orientation\+\_\+}}
+\index{orientation\+\_\+@{orientation\+\_\+}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{orientation\+\_\+}{orientation_}}]{\setlength{\rightskip}{0pt plus 5cm}madara\+::knowledge\+::containers\+::\+Native\+Double\+Array containers\+::\+Mission\+Chicken\+Soup\+::orientation\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontainers_1_1MissionChickenSoup_a6ea3226a3a25d33dd84c1af6a6b5858c}{}\label{classcontainers_1_1MissionChickenSoup_a6ea3226a3a25d33dd84c1af6a6b5858c}
+
+
+orientation that directly interfaces to the Knowledge\+Base 
+
+
+
+Definition at line 73 of file Mission\+Chicken\+Soup.\+h.
+
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!position@{position}}
+\index{position@{position}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{position}{position}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ containers\+::\+Mission\+Chicken\+Soup\+::position}\hypertarget{classcontainers_1_1MissionChickenSoup_ac0c96514382b72a88f7e6f2e5e170082}{}\label{classcontainers_1_1MissionChickenSoup_ac0c96514382b72a88f7e6f2e5e170082}
+
+
+the position of the agent (x, y, z) 
+
+
+
+Definition at line 65 of file Mission\+Chicken\+Soup.\+h.
+
+\index{containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}!position\+\_\+@{position\+\_\+}}
+\index{position\+\_\+@{position\+\_\+}!containers\+::\+Mission\+Chicken\+Soup@{containers\+::\+Mission\+Chicken\+Soup}}
+\subsubsection[{\texorpdfstring{position\+\_\+}{position_}}]{\setlength{\rightskip}{0pt plus 5cm}madara\+::knowledge\+::containers\+::\+Native\+Double\+Array containers\+::\+Mission\+Chicken\+Soup\+::position\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classcontainers_1_1MissionChickenSoup_afa8ca26939245451a0b5e5c42b05c219}{}\label{classcontainers_1_1MissionChickenSoup_afa8ca26939245451a0b5e5c42b05c219}
+
+
+imu\+\_\+sigma\+\_\+accel that directly interfaces to the Knowledge\+Base 
+
+
+
+Definition at line 76 of file Mission\+Chicken\+Soup.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/containers/\hyperlink{MissionChickenSoup_8h}{Mission\+Chicken\+Soup.\+h}\item 
+src/containers/\hyperlink{MissionChickenSoup_8cpp}{Mission\+Chicken\+Soup.\+cpp}\end{DoxyCompactItemize}

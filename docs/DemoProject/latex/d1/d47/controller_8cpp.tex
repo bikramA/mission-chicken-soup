@@ -1,0 +1,124 @@
+\hypertarget{controller_8cpp}{}\section{src/controller.cpp File Reference}
+\label{controller_8cpp}\index{src/controller.\+cpp@{src/controller.\+cpp}}
+{\ttfamily \#include $<$atomic$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include \char`\"{}madara/knowledge/\+Knowledge\+Base.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}madara/logger/\+Global\+Logger.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}madara/filters/\+Aggregate\+Filter.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}madara/utility/\+Utility.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}madara/utility/\+Epoch\+Enforcer.\+h\char`\"{}}\\*
+Include dependency graph for controller.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d7c/controller_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classChickenSoupFilter}{Chicken\+Soup\+Filter}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \hyperlink{controller_8cpp_aef952081e87739384ba5433cfe4297ae}{default\+\_\+multicast} (\char`\"{}239.\+255.\+0.\+1\+:4150\char`\"{})
+\item 
+void \hyperlink{controller_8cpp_a2cfd518572976845680798882117c286}{handle\+\_\+arguments} (int argc, char $\ast$$\ast$argv)
+\item 
+std\+::string \hyperlink{controller_8cpp_a982f4a462e23a5b6d37f88f16de65200}{host} (\char`\"{}\char`\"{})
+\item 
+int \hyperlink{controller_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\item 
+size\+\_\+t \hyperlink{controller_8cpp_ace1505cbd177deb9f4011d093a733b1e}{max\+\_\+bone\+\_\+size} (1000)
+\item 
+size\+\_\+t \hyperlink{controller_8cpp_a175b6cb294e84142dc11e63cec6f2f52}{num\+\_\+ingredients} (100)
+\item 
+double \hyperlink{controller_8cpp_af78f142abbba4f0e0491157da7569fc4}{send\+\_\+hertz} (5.\+0)
+\item 
+double \hyperlink{controller_8cpp_ad50cca0f08672c426ba940ba111b4614}{test\+\_\+time} (30)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+madara\+::transport\+::\+Qo\+S\+Transport\+Settings \hyperlink{controller_8cpp_aeec674db9554192e56960857e748f0ab}{settings}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{controller.\+cpp@{controller.\+cpp}!default\+\_\+multicast@{default\+\_\+multicast}}
+\index{default\+\_\+multicast@{default\+\_\+multicast}!controller.\+cpp@{controller.\+cpp}}
+\subsubsection[{\texorpdfstring{default\+\_\+multicast(""239.\+255.\+0.\+1\+:4150"")}{default_multicast("239.255.0.1:4150")}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string default\+\_\+multicast (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}239.\+255.\+0.\+1\+:4150\char`\"{}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{controller_8cpp_aef952081e87739384ba5433cfe4297ae}{}\label{controller_8cpp_aef952081e87739384ba5433cfe4297ae}
+\index{controller.\+cpp@{controller.\+cpp}!handle\+\_\+arguments@{handle\+\_\+arguments}}
+\index{handle\+\_\+arguments@{handle\+\_\+arguments}!controller.\+cpp@{controller.\+cpp}}
+\subsubsection[{\texorpdfstring{handle\+\_\+arguments(int argc, char $\ast$$\ast$argv)}{handle_arguments(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}void handle\+\_\+arguments (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{controller_8cpp_a2cfd518572976845680798882117c286}{}\label{controller_8cpp_a2cfd518572976845680798882117c286}
+
+
+Definition at line 34 of file controller.\+cpp.
+
+\index{controller.\+cpp@{controller.\+cpp}!host@{host}}
+\index{host@{host}!controller.\+cpp@{controller.\+cpp}}
+\subsubsection[{\texorpdfstring{host("""")}{host("")}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string host (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}\char`\"{}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{controller_8cpp_a982f4a462e23a5b6d37f88f16de65200}{}\label{controller_8cpp_a982f4a462e23a5b6d37f88f16de65200}
+\index{controller.\+cpp@{controller.\+cpp}!main@{main}}
+\index{main@{main}!controller.\+cpp@{controller.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{controller_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{controller_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 282 of file controller.\+cpp.
+
+\index{controller.\+cpp@{controller.\+cpp}!max\+\_\+bone\+\_\+size@{max\+\_\+bone\+\_\+size}}
+\index{max\+\_\+bone\+\_\+size@{max\+\_\+bone\+\_\+size}!controller.\+cpp@{controller.\+cpp}}
+\subsubsection[{\texorpdfstring{max\+\_\+bone\+\_\+size(1000)}{max_bone_size(1000)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t max\+\_\+bone\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{1000}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{controller_8cpp_ace1505cbd177deb9f4011d093a733b1e}{}\label{controller_8cpp_ace1505cbd177deb9f4011d093a733b1e}
+\index{controller.\+cpp@{controller.\+cpp}!num\+\_\+ingredients@{num\+\_\+ingredients}}
+\index{num\+\_\+ingredients@{num\+\_\+ingredients}!controller.\+cpp@{controller.\+cpp}}
+\subsubsection[{\texorpdfstring{num\+\_\+ingredients(100)}{num_ingredients(100)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t num\+\_\+ingredients (
+\begin{DoxyParamCaption}
+\item[{100}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{controller_8cpp_a175b6cb294e84142dc11e63cec6f2f52}{}\label{controller_8cpp_a175b6cb294e84142dc11e63cec6f2f52}
+\index{controller.\+cpp@{controller.\+cpp}!send\+\_\+hertz@{send\+\_\+hertz}}
+\index{send\+\_\+hertz@{send\+\_\+hertz}!controller.\+cpp@{controller.\+cpp}}
+\subsubsection[{\texorpdfstring{send\+\_\+hertz(5.\+0)}{send_hertz(5.0)}}]{\setlength{\rightskip}{0pt plus 5cm}double send\+\_\+hertz (
+\begin{DoxyParamCaption}
+\item[{5.}]{0}
+\end{DoxyParamCaption}
+)}\hypertarget{controller_8cpp_af78f142abbba4f0e0491157da7569fc4}{}\label{controller_8cpp_af78f142abbba4f0e0491157da7569fc4}
+\index{controller.\+cpp@{controller.\+cpp}!test\+\_\+time@{test\+\_\+time}}
+\index{test\+\_\+time@{test\+\_\+time}!controller.\+cpp@{controller.\+cpp}}
+\subsubsection[{\texorpdfstring{test\+\_\+time(30)}{test_time(30)}}]{\setlength{\rightskip}{0pt plus 5cm}double test\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{30}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{controller_8cpp_ad50cca0f08672c426ba940ba111b4614}{}\label{controller_8cpp_ad50cca0f08672c426ba940ba111b4614}
+
+
+\subsection{Variable Documentation}
+\index{controller.\+cpp@{controller.\+cpp}!settings@{settings}}
+\index{settings@{settings}!controller.\+cpp@{controller.\+cpp}}
+\subsubsection[{\texorpdfstring{settings}{settings}}]{\setlength{\rightskip}{0pt plus 5cm}madara\+::transport\+::\+Qo\+S\+Transport\+Settings settings}\hypertarget{controller_8cpp_aeec674db9554192e56960857e748f0ab}{}\label{controller_8cpp_aeec674db9554192e56960857e748f0ab}
+
+
+Definition at line 19 of file controller.\+cpp.
+
